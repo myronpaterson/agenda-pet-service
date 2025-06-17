@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Stop - Agenda</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>AGENDA PET - CUIDE DO SEU AMIGO</h1>
+        </header>
+        <form id="contact-form">
+            <input type="text" id="contact-name" placeholder="Nome do Dono(a)" required>
+            <input type="tel" id="contact-phone" placeholder="Telefone" required>
+            <select id="animal-type" required>
+                <option value="cachorro">Cachorro</option>
+                <option value="gato">Gato</option>
+            </select>
+            <button type="submit">Cadastrar</button>
+        </form>
+        <table cellspacing="0">
+            <thead>
+                <tr>
+                    <th>Nome do Dono(a)</th>
+                    <th>Telefone</th>
+                    <th>Animal</th> </tr>
+            </thead>
+            <tbody id="contact-list">
+                </tbody>
+        </table>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

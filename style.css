@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #f7f9fc;
+    color: #333;
+    padding-top: 60px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 24px;
+}
+
+/* CABEÇALHO CORRIGIDO */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* ESTA LINHA CENTRALIZA O CONTEÚDO */
+    margin-bottom: 40px;
+}
+
+header img {
+    height: 48px;
+    margin-right: 16px;
+}
+
+header h1 {
+    font-size: 2.2em;
+    color: #2a65ea;
+    text-align: center;
+}
+
+/* FORMULÁRIO ATUALIZADO */
+form {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 32px;
+    align-items: center;
+}
+
+input, select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1em;
+}
+
+input#contact-name {
+    flex-grow: 2; /* Faz o campo de nome ser maior */
+}
+input#contact-phone, select#animal-type {
+    flex-grow: 1; /* Faz os outros campos dividirem o espaço */
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #2a65ea;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1em;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #1e4aab;
+}
+
+/* TABELA ATUALIZADA */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 16px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+thead th {
+    background-color: #2a65ea;
+    color: white;
+}
+
+/* Estiliza a nova coluna de ícone de animal */
+table th:last-child,
+table td:last-child {
+    text-align: center;
+    width: 100px; /* Define uma largura fixa para a coluna do ícone */
+}
+
+/* Estiliza os ícones dentro da tabela */
+td .fa-dog, td .fa-cat {
+    font-size: 1.5em; /* Aumenta o tamanho do ícone */
+    color: #2a65ea;
+    opacity: 0.8;
+}
